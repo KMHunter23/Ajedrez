@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400vh;
+  background-color: #222;
+}
+
+#tablero {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  border: 2px solid white;
+}
+
+.celda {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.blanca {
+  background-color: #eee;
+}
+
+.negra {
+  background-color: #444;
+}
